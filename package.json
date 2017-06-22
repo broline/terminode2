@@ -1,0 +1,28 @@
+{
+  "name": "termindode",
+  "version": "1.0.0",
+  "description": "browser based command line interface",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --progress"
+  },
+  "keywords": [],
+  "author": "brian.oline@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
