@@ -6,7 +6,7 @@ module.exports = {
 		app: ["./src/index.jsx"]
 	},
 		output: {
-			path: path.resolve(__dirname, "dist"),
+			path: path.join(__dirname, "dist"),
 			publicPath: "/assets/",
 			filename: "bundle.js"
 		},
@@ -14,8 +14,7 @@ module.exports = {
 			inline: true,
 			contentBase: path.join(__dirname, "dist"),
 			compress: true,
-			port: 9000,
-			host: "0.0.0.0"
+			port: 9000
 		},
 		module: {
 		rules: [
