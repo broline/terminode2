@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-export default class Root extends Component{
+export default class Root extends Component {
 
-	render() {
+	render () {
 		return <div>hello</div>;
 	}
 }
