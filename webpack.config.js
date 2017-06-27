@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = {
 	devtool: "source-map",
 	resolve: {
-		extensions: ['.js', '.jsx']
+		extensions: [".js", ".jsx"]
 	},
 	entry: {
 		app: ["./src/index.jsx"]
@@ -20,12 +20,12 @@ module.exports = {
 		port: 9000
 	},
 	module: {
-	rules: [
-		{
-			test: /\.jsx$/,
-			exclude: /(node_modules)/,
-			use: "babel-loader"
-		}
-	]
-}
+		rules: [
+			{
+				test: /\.jsx$/,
+				exclude: /(node_modules)/,
+				use: "babel-loader"
+			}
+		]
+	}
 };

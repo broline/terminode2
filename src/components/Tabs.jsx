@@ -1,15 +1,15 @@
-import React from 'react';
-import { Nav, NavItem } from 'react-bootstrap';
+import React from "react";
+import { Nav, NavItem } from "react-bootstrap";
 
 const Tabs = ({
-	tabs,
+	terminals,
 	selectedIndex,
 	onTabChanged,
 	onAddTab
 }) => {
 
-	const mappedTabs = tabs ? tabs.map(t => {
-		return <NavItem eventKey={t.index}>{t.name}</NavItem>;
+	const mappedTabs = terminals ? terminals.map(t => {
+		return <NavItem key={t.index} eventKey={t.index}>{t.name}</NavItem>;
 	}) : null;
 
 	return(

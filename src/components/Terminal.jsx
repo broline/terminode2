@@ -1,8 +1,8 @@
-import React from 'react';
-import { Panel } from 'react-bootstrap';
+import React from "react";
+import { Panel } from "react-bootstrap";
 
 const Tabs = ({
-	tab : {
+	selectedTerminal : {
 		name
 	}
 }) => {

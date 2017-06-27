@@ -6,8 +6,8 @@ export default class Root extends Component {
 	render () {
 		return (
 			<div>
-				<Tabs />
-				<Terminal tab={{ name: "terminal 1" }}/>
+				<Tabs terminals={this.props.terminals} selectedIndex={this.props.selectedTerminal.index}/>
+				<Terminal selectedTerminal={this.props.selectedTerminal} />
 			</div>
 		);
 	}
