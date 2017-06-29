@@ -9,7 +9,8 @@ const Tabs = ({
 }) => {
 
 	const mappedTabs = terminals ? terminals.map(t => {
-		return <NavItem key={t.index} eventKey={t.index}>{t.name}</NavItem>;
+		const name = t.isLoading ? "loading..." : t.name || t.path;
+		return <NavItem key={t.index} eventKey={t.index}>{name}</NavItem>;
 	}) : null;
 
 	return(

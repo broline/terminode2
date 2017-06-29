@@ -17,7 +17,11 @@ const terminals = (state = Immutable([newTerminal(0)]), action) => {
 const newTerminal = index => {
 	return Immutable({
 		index,
-		name: "New terminal"
+		name: null,
+		path: null,
+		text: "C:\\dev\\terminode",
+		isLoading: true,
+		isLoaded: false
 	});
 };
 

@@ -35,6 +35,7 @@
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.1",
+    "react-jss": "^7.0.0-pre",
     "react-redux": "^5.0.5",
     "redux": "^3.7.1",
     "seamless-immutable": "^7.1.2"
