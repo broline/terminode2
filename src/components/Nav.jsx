@@ -6,7 +6,7 @@ const Nav = () => {
 		<Navbar inverse fluid>
 			<Navbar.Header>
 				<Navbar.Brand>
-					terminode
+					<i className="fa fa-terminal"/> terminode
 				</Navbar.Brand>
 			</Navbar.Header>
 		</Navbar>

@@ -3720,6 +3720,12 @@ react-dom@^15.6.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
+react-fontawesome@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/react-fontawesome/-/react-fontawesome-1.6.1.tgz#eddce17e7dc731aa09fd4a186688a61793a16c5c"
+  dependencies:
+    prop-types "^15.5.6"
+
 react-jss@^7.0.0-pre:
   version "7.0.0-pre"
   resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-7.0.0-pre.tgz#58fae1d136c579d4979fb79f697504b68585eafb"

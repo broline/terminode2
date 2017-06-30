@@ -19,7 +19,7 @@ const newTerminal = index => {
 		index,
 		name: null,
 		path: null,
-		text: "C:\\dev\\terminode",
+		text: ">_",
 		isLoading: true,
 		isLoaded: false
 	});
