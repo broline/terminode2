@@ -11,6 +11,13 @@ export function addTerminal () {
 	};
 }
 
+export function removeTerminal (index) {
+	return {
+		type: TYPE.REMOVE_TERMINAL,
+		index
+	};
+}
+
 export const TYPE = {
 	SELECT_TERMINAL: "SELECT_TERMINAL",
 	ADD_TERMINAL: "ADD_TERMINAL",

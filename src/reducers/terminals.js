@@ -10,7 +10,7 @@ const terminals = (state = Immutable([newTerminal(0)]), action) => {
 			newTerminal(maxBy(state, t => t.index).index + 1)
 		];
 	case TYPE.REMOVE_TERMINAL:
-		return state.filter(terminal => terminal.get(t => t.index !== action.index));
+		return state.filter(terminal => terminal.index !== action.index);
 	default:
 		return state;
 	}};

@@ -14,11 +14,16 @@ handleAddTerminal = () => {
 	this.props.addTerminal();
 }
 
+handleRemoveTerminal = (el, index) => {
+	this.props.removeTerminal(index);
+	el.stopPropagation(); //so the removed terminal is not selected
+}
+
 render () {
 		return (
 			<div>
 				<Nav />
-				<Tabs terminals={this.props.terminals} selectedIndex={this.props.selectedTerminal.index} onSelect={this.handleSelectTerminal} onAdd={this.handleAddTerminal}/>
+				<Tabs terminals={this.props.terminals} selectedIndex={this.props.selectedTerminal.index} onSelect={this.handleSelectTerminal} onAdd={this.handleAddTerminal} onRemove={this.handleRemoveTerminal} />
 				<Terminal selectedTerminal={this.props.selectedTerminal} />
 			</div>
 		);
