@@ -6,7 +6,7 @@ import Nav from "./Nav";
 export default class Root extends Component {
 
 handleSelectTerminal = index => {
-	if(!index || index < 0) return;
+	if(index < 0) return;
 	this.props.selectTerminalIndex(index);
 }
 
