@@ -16,6 +16,9 @@ export function getTerminals (state) {
 }
 
 export function getSelectedTerminal (state) {
+	if(state.terminals.length == 1)
+		return state.terminals[0];
+
 	if(state.selectedTerminalIndex < 0)
 		return state.terminals.find(x => x.index == maxBy(state.terminals, t => t.index).index);
 
