@@ -6,8 +6,8 @@ import Fa from "react-fontawesome";
 const Tabs = ({
 	terminals,
 	selectedIndex,
-	onTabChanged,
-	onAddTab
+	onAdd,
+	onSelect
 }) => {
 
 	const mappedTabs = terminals ? terminals.map(t => {
@@ -16,9 +16,9 @@ const Tabs = ({
 	}) : null;
 
 	return(
-		<Nav bsStyle="tabs" activeKey={selectedIndex} onSelect={onTabChanged}>
+		<Nav bsStyle="tabs" activeKey={selectedIndex} onSelect={onSelect}>
 			{mappedTabs}
-			<NavItem eventKey={0}><a href="#" onClick={onAddTab}><Fa name="plus"/> New</a></NavItem>
+			<NavItem eventKey={-1}><a href="#" onClick={onAdd}><Fa name="plus"/> New</a></NavItem>
 		</Nav>
 	);
 };
